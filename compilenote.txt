@@ -1,0 +1,8 @@
+g++ play.cpp -o play.exe -lwinmm
+g++ listen.cpp -o listen.exe -lwinmm -lwsock32  -lws2_32
+g++ onlineplayer.cpp -o onlineplayer.exe -lwinmm -lwsock32  -lws2_32
+g++ coplayer.cpp -o coplayer.exe -lwinmm -lwsock32  -lws2_32
+
+server:
+gcc nmserver.c -o nmserver
+gcc nmserver2.c -o nmserver2 -lpthread
